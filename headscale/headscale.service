@@ -1,0 +1,9 @@
+#/etc/systemd/system/headscale.service
+[Unit]
+Description=Headscale Control Server
+
+[Service]
+ExecStart=/usr/local/bin/headscale serve
+
+[Install]
+WantedBy=multi-user.target
