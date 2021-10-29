@@ -1,0 +1,8 @@
+[Unit]
+Description=Larry is a Golang cli bot that tweets random Github repositories.
+
+[Service]
+ExecStart=/usr/local/bin/larry --topic kubernetes --config "/etc/larry/config.json" --time 15 --ht k8s,kubernetes,capi
+
+[Install]
+WantedBy=multi-user.target
